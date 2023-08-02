@@ -2,8 +2,6 @@ import axios from "axios";
 import { createContext, useReducer } from "react";
 import UserReducer from "./UserReducer";
 
-
-
 const token = JSON.parse(localStorage.getItem("token"));
 
 const initialState = {
