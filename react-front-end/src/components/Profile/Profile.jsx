@@ -15,7 +15,7 @@ const Profile = () => {
         <div>
             <Card title={user.name}
              style={{ width: 300 }}>
-                <p>{user.name}</p>
+                <p>{user.email}</p>
             </Card>
         </div>
     )

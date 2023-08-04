@@ -1,11 +1,23 @@
 import React, { useContext } from 'react'
-import { Button, Checkbox, Form, Input } from 'antd';
+import { Button, Checkbox, Form, Input, notification } from 'antd';
 import { UserContext } from '../../context/UserContext/UserState';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-    const {login} = useContext(UserContext)
+    const { login } = useContext(UserContext)
+    const navigate = useNavigate()
     const onFinish = (values) => {
         login(values)
+        notification.success
+            ({
+                message: 'Successfully Logged',
+                description:
+                    'Congrats! Welcome to the store 😁'
+            });
+
+        setTimeout(() => {
+            navigate("/profile")
+        }, 3000);
         console.log('Success:', values);
     };
     const onFinishFailed = (errorInfo) => {
@@ -40,8 +52,8 @@ const Login = () => {
                             message: 'Please input your email!',
                         },
                         {
-                           type:"email",
-                           message:"Please input your correctly email!"
+                            type: "email",
+                            message: "Please input your correctly email!"
 
                         }
                     ]}
@@ -86,7 +98,7 @@ const Login = () => {
             </Form>
         </div>
     )
-            
+
 }
 
 export default Login
