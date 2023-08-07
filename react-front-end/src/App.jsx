@@ -5,6 +5,7 @@ import Login from './components/Login/Login'
 import Profile from './components/Profile/Profile'
 import Header from './components/Header/Header'
 import Products from './components/Products/Products'
+import Cart from './components/Cart/Cart'
 import './App.css'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/cart" element={<Cart/>} />
           </Routes>
           </ProductsProvider>
         </UserProvider>
