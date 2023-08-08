@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import { UserContext } from '../../context/UserContext/UserState'
 import { Card, Spin } from 'antd';
 import "./Profile.scss"
+import products from '../../context/ProductsContext/ProductsReducer';
 
 const Profile = () => {
     const { user, getUserInfo } = useContext(UserContext)
@@ -18,6 +19,7 @@ const Profile = () => {
              style={{ width: 300 }}>
                 <p>{user.name}</p>
                 <p>{user.email}</p>
+                <p>{console.log(user.productId)}</p>
             </Card>
         </div>
     )
