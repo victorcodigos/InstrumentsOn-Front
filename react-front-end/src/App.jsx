@@ -3,7 +3,6 @@ import { ProductsProvider } from './context/ProductsContext/ProductsState'
 import { UserProvider } from './context/UserContext/UserState'
 import { OrdersProvider } from './context/OrdersContext/OrdersContext'
 
-
 import Login from './components/Login/Login'
 import Register from './components/Register/Register'
 import Profile from './components/Profile/Profile'
