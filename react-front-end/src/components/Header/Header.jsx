@@ -6,6 +6,8 @@ import { UserDeleteOutlined, ProfileOutlined, LoginOutlined,ShoppingCartOutlined
 import { Badge } from "antd";
 import "./Header.scss"
 
+
+
 const Header = () => {
     const { token, logout } = useContext(UserContext)
     const { cart, clearCart } = useContext(ProductsContext)
@@ -23,7 +25,6 @@ const Header = () => {
     return (
         <div className="header">
             <button><Link to="/home"> Home <HomeOutlined style={{ color: "#000", width: "20px" }}/></Link></button>
-            
             {token ? (
                 <>
                     
