@@ -1,5 +1,15 @@
-.card{
+.card {
     text-align: center;
-    display: flex;
-    background-color: rgba(60, 8, 190, 0.207);
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0rem;
+
+    .card-box {
+
+        font-size: large;
+        border-color: rgba(0, 255, 255, 0.586);
+        background-image: linear-gradient(rgba(143, 125, 125, 0.859), rgba(0, 0, 0, 0.4)),
+            url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    }
+
 }

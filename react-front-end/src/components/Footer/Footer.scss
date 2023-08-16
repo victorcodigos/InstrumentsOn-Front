@@ -7,8 +7,8 @@
 .footer-basic {
     padding: 1.5em;
     background-color: #d33939;
-    color: rgb(74, 18, 18);
-    background-color: rgb(227, 129, 129);
+    color: rgb(38, 30, 30);
+    background-color: rgba(9, 95, 116, 0.807); 
 
     ul {
         display: flex;
@@ -28,7 +28,7 @@
 
         a:hover {
             opacity: 1;
-            color: purple;
+            color: rgb(204, 18, 18);
         }
     }
 
@@ -57,8 +57,8 @@
 
     .social>a:hover {
         opacity: 0.9;
-        color: rgb(133, 22, 133);
-        border: 1px solid purple;
+        color: rgb(204, 18, 18);
+        border: 1px solid rgb(204, 18, 18);
     }
 
     .copyright {

@@ -23,24 +23,24 @@ const Header = () => {
         navigate("/login")
     }
     return (
-        <div className="header">
-            <button><Link to="/home"> Home <HomeOutlined style={{ color: "#000", width: "20px" }}/></Link></button>
+        <div  className="header" >
+            <button><Link to="/home"> <HomeOutlined style={{ color: "#000", width: "20px" }}/></Link></button>
             {token ? (
                 <>
                     
-                    <button><Link to="/profile"> Profile <ProfileOutlined style={{ color: "#000", width: "20px" }}/> </Link></button>
-                    <button><Link to="/search"> Search <SearchOutlined /></Link></button>
+                    <button><Link to="/profile">  <ProfileOutlined style={{ color: "#000", width: "20px" }}/> </Link></button>
+                    <button><Link to="/search">  <SearchOutlined style={{ color: "#000", width: "20px" }} /> </Link></button>
                     <button><Link to="/cart"> <Badge count={cart.length} shape="square" size="small" color="blue" style={{marginLeft:"17px"}}></Badge><ShoppingCartOutlined style={{ color: "#000", width: "30px" }}/> </Link></button>
-                    <button onClick={logoutUser}> Logout <UserDeleteOutlined /></button>
+                    <button onClick={logoutUser}>  <UserDeleteOutlined /></button>
                 </>
             ) : (
                 
-                <button> <Link to="/login"> Login <LoginOutlined /></Link></button>,<button><Link to="/register">Register</Link></button>
+                <button> <Link to="/login"> Login <LoginOutlined /></Link></button>, <button><Link to="/register">Register</Link></button>
                 
             )}
 
 
-        </div>
+  </div> 
     )
 }
 

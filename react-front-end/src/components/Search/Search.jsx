@@ -1,8 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import "./Search.scss";
 
 function Search() {
     const [product, setProduct] = useState([]);
@@ -47,18 +46,18 @@ function Search() {
     return (
         <div className="App">
             <div className="container-input">
-                <input className="form-control inputBuscar" value={search} placeholder="search your product" onChange={handleChange} />
-                <button className="btn btn-success"> <FontAwesomeIcon icon={faSearch} margin="letf" ></FontAwesomeIcon>  </button>
+                <p><input className="form-control-inputBuscar" value={search} placeholder="search your product 🔎" onChange={handleChange} /></p>
+                
             </div>
             <div className="table-responsive">
-                <table className="table table-sm table-bordered">
+                <table className="table-sm-table-bordered">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>NAME</th>
-                            <th>TYPE</th>
-                            <th>YEAR</th>
-                            <th>PRICE</th>
+                            <th>| ID | </th>
+                            <th>| NAME | </th>
+                            <th>| TYPE | </th>
+                            <th>| YEAR | </th>
+                            <th>| PRICE | </th>
                         </tr>
                     </thead>
                     <tbody>

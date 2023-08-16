@@ -1,0 +1,39 @@
+.cart-container {
+
+    text-align: center;
+    margin: 0 auto;
+    padding: 0rem;
+    background-size: cover;
+    background-position: center;
+    
+
+    .divider{
+        font-size: large;
+        
+    }
+
+    .list {
+        background-color: rgba(9, 95, 116, 0.282);
+        border-color: rgba(0, 255, 255, 0.586);
+    }
+
+    .products{
+        font-size: large;
+    }
+
+    .btn{
+        background-color:rgba(148, 198, 211, 0.408);
+
+    }
+
+    .btn-in {
+
+        background-color:rgba(9, 95, 116, 0.408);
+    }
+    .btn-in-in {
+
+        background-color:rgba(9, 95, 116, 0.408);
+    }
+    
+
+}

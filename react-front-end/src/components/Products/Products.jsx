@@ -12,14 +12,14 @@ const Products = () => {
     return (
         <div className="products-container" >
             {products?.map((product) => {
-                return <Card
+                return <Card className="card-products"
                     style={{ width: 300, border: "1px solid black" }}
                     key={product.id}
                     title={product.id}>
                     <p>NAME: {product.name}</p>
                     <p>TYPE: {product.type}</p>
                     <p>PRICE: {product.price} $</p>
-                    <button onClick={() => addCart(product)}> ADD CART </button>
+                    <button className="btn-card" onClick={() => addCart(product)}>ADD TO CART </button>
                 </Card>
             })} </div>
     )
