@@ -20,7 +20,9 @@ const Profile = () => {
                 <p>NAME:   {user.name}</p>
                 <p>EMAIL:  {user.email}</p>
                 <p>ROLE:   {user.role}</p>
-                <p>{console.log(user.productId)}</p>
+                
+
+            {user?.Ordens?.map(Ordens => Ordens.Products.map(product => <p key={product.id}> Your order: {product.name}</p>))} 
             </Card>
         </div>
     )

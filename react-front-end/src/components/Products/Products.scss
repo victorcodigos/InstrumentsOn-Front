@@ -2,6 +2,8 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 5%;
+    flex-wrap: wrap;
 
     .card-products{
         background-color: rgba(184, 172, 172, 0.63);

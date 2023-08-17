@@ -1,12 +1,12 @@
 import { createContext } from "react";
 import axios from "axios";
 
-const API_URL = "http://localhost:3000";
 
 export const OrdersContext = createContext();
 
 export const OrdersProvider = ({ children }) => {
-
+    
+    const API_URL = "http://localhost:3000";
     const createOrder = async (cart) => {
         const token = JSON.parse(localStorage.getItem("token"));
         const products = cart.map((product) =>{
