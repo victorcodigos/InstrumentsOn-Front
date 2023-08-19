@@ -2,25 +2,32 @@
     margin: 0 auto;
     padding: 0rem;
     text-align: center;
-  }
+}
 
-.container{
-    
-    display:flex;   
+.container {
+
+    display: flex;
     justify-content: center;
     padding: 0rem;
     text-align: center;
-    a{
-        display:flex;
+
+    a {
+        display: flex;
         justify-content: center
     }
-   
+
 }
 
-.textContainer{
-    display:flex;
+.textContainer {
+    display: flex;
     justify-content: space-evenly;
 }
 
+.GlobalContainer {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 
-
+    background-image: linear-gradient(rgba(143, 125, 125, 0.859), rgba(0, 0, 0, 0.4)),
+        url("https://images.pexels.com/photos/3944104/pexels-photo-3944104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+}

@@ -8,16 +8,18 @@
 
     .table-responsive {
         background-color: rgba(100, 104, 104, 0.053);
+        display: flex;
+        padding: 5rem;
+        justify-content: space-evenly;
 
     }
 
     .table-sm-table-bordered{
 
-        text-align: center;
+        text-align: left;
         font-size: large;
-        color: azure;
+        color: white;
         
     }
-
 
 }
