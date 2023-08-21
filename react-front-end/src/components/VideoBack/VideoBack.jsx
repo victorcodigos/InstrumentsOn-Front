@@ -1,6 +1,7 @@
 import React from 'react'
 import link from './discoBG.mp4'
 import './VideoBack.scss'
+import { Link } from 'react-router-dom'
 
 const VideoBack = () => {
     return (
@@ -15,9 +16,7 @@ const VideoBack = () => {
                 and we can't wait to assist you on your musical adventure.
                  Thank you for choosing us as your musical partner. Let's embark on a harmonious journey together!</div>
             <video src={link} autoPlay loop muted />
-            <div className="video-container">
-                <p>This is my site.</p>
-            </div>
+            
 
         </div>
     )

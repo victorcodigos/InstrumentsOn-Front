@@ -46,8 +46,8 @@ function Search() {
     return (
         <div className="App">
             <div className="container-input">
-                <p><input className="form-control-inputBuscar" value={search} placeholder="search your product 🔎" onChange={handleChange} /></p>
-                
+                <p><br /><input className="form-control-inputBuscar" value={search} placeholder="search your product 🔎" onChange={handleChange} /></p>
+
             </div>
             <div className="table-responsive">
                 <table className="table-sm-table-bordered">

@@ -15,11 +15,11 @@ const Cart = () => {
             <Divider className="divider" orientation="center"> Here are your list of products! </Divider>
             <List className="list"
             size="small"
-            header={<div className="products">Products</div>}
+            header={<div className="products">Products : </div>}
             footer={<div className="btn"><button className="btn-in" onClick={() =>{createOrder(cart), clearCart()}}> Buy it ✅ </button><button className="btn-in-in" onClick={clearCart}>Clear your cart 🚫</button></div>}
             bordered
             dataSource={data}
-            renderItem={(item) => <List.Item>{item}</List.Item>}
+            renderItem={(item) => <List.Item className="item">{item}</List.Item>}
             />
         </div>
     );
