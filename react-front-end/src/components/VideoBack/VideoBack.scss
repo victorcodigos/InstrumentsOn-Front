@@ -1,0 +1,36 @@
+.video{
+
+    padding: 13%;
+    margin: 2%;
+    height: 100%;
+    width: 100vh;
+    object-fit: cover;
+    
+    
+    
+    .video-container{
+
+    
+        width: 100%;
+        max-width: 800px; 
+        padding-top: 56.25%; 
+        position: relative;
+        top: 10%;
+        
+    }
+
+    .overplay {
+        top: 25%;
+        position: absolute;
+        bottom: 10%; 
+        width: 82%; 
+        left: 10%;
+        height: 100%;
+        background-color: rgba(9, 95, 116, 0); 
+        border-radius: 10px; 
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.1rem; 
+        color: #fff; 
+    
+    }
+}

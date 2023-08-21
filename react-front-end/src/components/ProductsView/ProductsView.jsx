@@ -1,38 +1,39 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import { ProductsContext } from "../../context/ProductsContext/ProductsState";
+import React, { useState, useEffect, useContext }from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+import "./ProductsView.scss"
 import { Card } from "antd";
+import axios from "axios";
 
-const ProductsView = () => {
-    const [product, setItemId] = useState([])
-    const {id} = useParams
+const API_URL = "http://localhost:3000";
+
+function ProductsView() {
+    const { productId } = useParams();
+    const { addCart } = useContext(ProductsContext);
+    const [product, setProduct] = useState({});
 
     const getItemId = async () => {
-        const res = await axios.get("http://localhost:3000/products/id/"+`${id}`)
-        const response = await res.json();
-        setItemId(response);
+        const res = await axios.get(API_URL + `/products/id/${productId}`);
+        setProduct(res.data);
+    };
 
-    }
-
-    useEffect(() =>{
-        getItemId()
-    });
+    useEffect(() => {
+        getItemId();
+    }, []);
 
     return (
-            <div className="products-container" >
-                {product?.map((product) => {
-                    return <Card
-                        style={{ width: 300, border: "1px solid black" }}
-                        key={product.id}
-                        title={product.id}>
-                        <p>NAME: {product.name}</p>
-                        <p>TYPE: {product.type}</p>
-                        <p>PRICE: {product.price} $</p>
-                        <button onClick={() => addCart(product)}> ADD CART </button>
-                    </Card>
-                })} </div>
-        )
+        <div className="products-containerX">
+            <Card className="card-productsX"
+                style={{ width: 300, border: "1px solid black" }}
+                key={product.id}
+                title={product.id}>
+                <p>NAME: {product.name}</p>
+                <p>TYPE: {product.type}</p>
+                <p>PRICE: {product.price} $</p>
+                <button className="btn-cardX" onClick={() => addCart(product)}> ADD CART </button>
+            </Card>
+        </div>
+    );
 }
 
-export default ProductsView
+export default ProductsView;

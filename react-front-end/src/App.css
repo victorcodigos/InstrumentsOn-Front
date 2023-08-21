@@ -1,16 +1,11 @@
-#root {
-  margin: 0 auto;
-  padding: 0rem;
-  text-align: center;
-
-  
-}
 
 .GlobalContainer {
-  height: 150vh;
-  background-size: cover;
-  background-position: center;
 
-  background-image: linear-gradient(rgba(143, 125, 125, 0.859), rgba(0, 0, 0, 0.4)),
-      url("https://images.pexels.com/photos/3944104/pexels-photo-3944104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+  height: 100%;
+    width: 100%;
+   
+  
+  background-image: linear-gradient(rgba(9, 95, 116, 0.306), rgba(0, 0, 0, 0.4)),
+      url("https://images.pexels.com/photos/3944104/pexels-photo-3944104.jpeg?auto=compress&cs=tinysrgb&w=1290&h=850&dpr=1")
 }
+

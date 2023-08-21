@@ -44,7 +44,7 @@ const Login = () => {
                 onFinishFailed={onFinishFailed}
                 autoComplete="off"
             >
-                <Form.Item
+                <Form.Item className="login"
                     label="Email"
                     name="email"
                     rules={[

@@ -23,7 +23,7 @@ const Register = () => {
     }
 
     return (
-        <div className="container">
+        <div className="container-mainX">
             <Form
                 name="basic"
                 labelCol={{ span: 8 }}
@@ -33,7 +33,7 @@ const Register = () => {
                 onFinishFailed={onFinishFailed}
                 autoComplete="off"
             >
-                <Form.Item
+                <Form.Item className="register"
                     label="Name"
                     name="name"
                     rules={[{ required: true, message: "Please input your name!" }]}
@@ -57,7 +57,7 @@ const Register = () => {
                     <Input.Password />
                 </Form.Item>
 
-                <div className='textContainer'>
+                <div className>
                     <span> Already have an account?</span> <Link to='/login'>Login</Link>
                 </div>
 

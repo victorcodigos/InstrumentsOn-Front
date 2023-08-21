@@ -13,6 +13,7 @@ import Cart from './components/Cart/Cart'
 import Footer from './components/Footer/Footer'
 import Search from './components/Search/Search'
 import NavBar from './components/NavBar/NavBar'
+import VideoBack from './components/VideoBack/VideoBack'
 import './App.css'
 
 
@@ -29,13 +30,13 @@ function App() {
                 <NavBar />
                 <Routes>
                   <Route path="/register" element={<Register />} />
-                  <Route path="/home" element={<Products />} />
+                  <Route path="/home" element={<VideoBack/>} />
                   <Route path="/products" element={<Products />} />
                   <Route path="/profile" element={<Profile />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/cart" element={<Cart />} />
                   <Route path="/search" element={<Search />} />
-                  <Route path="/product/:id" element={<ProductsView />} exact />
+                  <Route path="/product/:productId" element={<ProductsView />} />
                   <Route path="/*" element={<PageNotFound />} />
                 </Routes>
                 <Footer />

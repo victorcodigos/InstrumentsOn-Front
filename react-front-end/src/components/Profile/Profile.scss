@@ -1,15 +1,40 @@
-.card {
-    text-align: center;
+body {
+    margin: 0; 
+    padding: 0; 
+    background-image: linear-gradient(rgba(9, 95, 116, 0.306), rgba(0, 0, 0, 0.4)),
+        url("https://images.pexels.com/photos/3944104/pexels-photo-3944104.jpeg?auto=compress&cs=tinysrgb&w=1290&h=850&dpr=1");
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
     height: 100vh;
-    margin: 0 auto;
-    padding: 0rem;
+    
+}
 
-    .card-box {
-
-        font-size: large;
-        border-color: rgba(0, 255, 255, 0.586);
-        background-image: linear-gradient(rgba(143, 125, 125, 0.859), rgba(0, 0, 0, 0.4)),
-            url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+.card {
+  
+   
+    height: 100%;
+    left: 0;
+    padding: 5rem;
+    background-image: linear-gradient(rgba(9, 95, 116, 0.306), rgba(0, 0, 0, 0.4)),
+        url("https://images.pexels.com/photos/3944104/pexels-photo-3944104.jpeg?auto=compress&cs=tinysrgb&w=1290&h=850&dpr=1");
+        
     }
 
+
+.card-box {
+
+    font-size: large;
+    border-color: rgba(22, 24, 24, 0.586);
+    background-image: linear-gradient(rgba(143, 125, 125, 0.859), rgba(0, 0, 0, 0.4)),
+        url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover; 
+    background-position: center center; 
+    color: white;
+    align-items: center;
+
+    width: 100%;
+    height: 70vh;
+    
+    
 }

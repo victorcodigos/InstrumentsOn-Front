@@ -1,0 +1,26 @@
+.products-containerX {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    padding: 5rem;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+    .card-productsX {
+        background-color: rgba(184, 172, 172, 0.63);
+        padding: 2%;
+        gap: 5%;
+        width: calc(30% - 20px);
+
+    }
+
+    .btn-cardX {
+        background-color: rgba(9, 95, 116, 0.408);
+        border-radius: 5%;
+        margin-top: 10px;
+
+    }
+
+
+}
