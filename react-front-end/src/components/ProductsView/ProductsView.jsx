@@ -1,6 +1,6 @@
 import { ProductsContext } from "../../context/ProductsContext/ProductsState";
 import React, { useState, useEffect, useContext }from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./ProductsView.scss"
 import { Card } from "antd";
 import axios from "axios";
@@ -30,7 +30,9 @@ function ProductsView() {
                 <p>NAME: {product.name}</p>
                 <p>TYPE: {product.type}</p>
                 <p>PRICE: {product.price} $</p>
-                <button className="btn-cardX" onClick={() => addCart(product)}> ADD CART </button>
+                <button className="btn-cardX" onClick={() => addCart(product)}> ADD TO CART </button>
+                <button className="btn-products"><Link to="/products"> All Products </Link></button>
+
             </Card>
         </div>
     );

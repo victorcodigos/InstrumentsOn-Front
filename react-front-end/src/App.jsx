@@ -14,6 +14,7 @@ import Footer from './components/Footer/Footer'
 import Search from './components/Search/Search'
 import NavBar from './components/NavBar/NavBar'
 import VideoBack from './components/VideoBack/VideoBack'
+import Audio from './components/Audio/Audio';
 import './App.css'
 
 
@@ -29,6 +30,7 @@ function App() {
               <OrdersProvider>
                 <NavBar />
                 <Routes>
+                <Route path="/audio" element={<Audio/>} />
                   <Route path="/register" element={<Register />} />
                   <Route path="/home" element={<VideoBack/>} />
                   <Route path="/products" element={<Products />} />
