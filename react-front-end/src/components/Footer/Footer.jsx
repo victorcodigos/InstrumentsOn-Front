@@ -7,11 +7,11 @@ const Footer = () => {
             <div className="footer-basic">
                 <footer>
                     <div className="social">
-                        <a href="#"> <Icon icon="ion:logo-instagram" /></a>
-                        <a href="#"><Icon icon="ion:logo-snapchat" /></a>
-                        <a href="#"><Icon icon="ion:logo-twitter" /></a>
-                        <a href="#"><Icon icon="ion:logo-facebook" /></a>
-                        <a href="#"><Icon icon="ion:logo-linkedin" /></a></div>
+                        <a href="https://www.instagram.com/macedodedeus/"> <Icon icon="ion:logo-instagram" /></a>
+                        <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/"><Icon icon="ion:logo-snapchat" /></a>
+                        <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/"><Icon icon="ion:logo-twitter" /></a>
+                        <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/"><Icon icon="ion:logo-facebook" /></a>
+                        <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/"><Icon icon="ion:logo-linkedin" /></a></div>
                     <ul className="list-inline">
                         <li className="list-inline-item"><a href="#">Home</a></li>
                         <li className="list-inline-item"><a href="#">Services</a></li>

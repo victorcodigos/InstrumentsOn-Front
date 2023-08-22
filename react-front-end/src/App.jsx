@@ -17,7 +17,6 @@ import VideoBack from './components/VideoBack/VideoBack'
 import Audio from './components/Audio/Audio';
 import './App.css'
 
-
 function App() {
 
 
@@ -30,9 +29,9 @@ function App() {
               <OrdersProvider>
                 <NavBar />
                 <Routes>
-                <Route path="/audio" element={<Audio/>} />
+                  <Route path="/audio" element={<Audio />} />
                   <Route path="/register" element={<Register />} />
-                  <Route path="/home" element={<VideoBack/>} />
+                  <Route path="/home" element={<VideoBack />} />
                   <Route path="/products" element={<Products />} />
                   <Route path="/profile" element={<Profile />} />
                   <Route path="/login" element={<Login />} />
