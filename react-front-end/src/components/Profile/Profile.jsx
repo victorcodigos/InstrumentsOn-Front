@@ -20,7 +20,6 @@ const Profile = () => {
                 <p>NAME:   {user.name}</p>
                 <p>EMAIL:  {user.email}</p>
                 <p>ROLE:   {user.role}</p>
-                <p>{console.log(user.password)}</p>
             </Card>
         </div>
     )

@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserContext } from '../../context/UserContext/UserState';
 import { ProductsContext } from '../../context/ProductsContext/ProductsState';
-import { UserDeleteOutlined, LoginOutlined, ShoppingCartOutlined, HomeOutlined, SearchOutlined, FireOutlined, PlayCircleOutlined } from '@ant-design/icons';
+import { UserDeleteOutlined, LoginOutlined, ShoppingCartOutlined, HomeOutlined, SearchOutlined, FireOutlined, PlayCircleOutlined, SketchOutlined } from '@ant-design/icons';
 import { Badge } from 'antd';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -38,7 +38,7 @@ function NavBar() {
                                 <Nav.Link as={Link} to="/audio"><PlayCircleOutlined /></Nav.Link>
                                 <Nav.Link as={Link} to="/cart"><Badge count={cart.length} shape="square" size="small" color="blue" style={{ marginLeft: '50px' }} > <ShoppingCartOutlined /></Badge>
                                 </Nav.Link> <Nav.Link onClick={logoutUser}><UserDeleteOutlined /></Nav.Link>
-                                <Nav.Link className="name" as={Link} to="/profile">{user && user.name ? `Hello  ${user.name}`: ""} </Nav.Link> 
+                                <Nav.Link as={Link} to="/profile"> {user && user.name ? `Hello  ${user.name}`: ""} <SketchOutlined /></Nav.Link> 
                             </>
                         ) : (
                             <>

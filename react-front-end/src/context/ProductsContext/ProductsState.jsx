@@ -7,7 +7,7 @@ const cart = JSON.parse(localStorage.getItem("cart")) || []
 const initialState = {
     products: [],
     cart: cart,
-    
+
 };
 
 const API_URL = "http://localhost:3000";
@@ -28,14 +28,30 @@ export const ProductsProvider = ({ children }) => {
     };
     const addCart = (product) => {
         dispatch({
-            type:"ADD_CART",
+            type: "ADD_CART",
             payload: product,
         });
     };
     const clearCart = (product) => {
         dispatch({
-            type:"CLEAR_CART",
-            
+            type: "CLEAR_CART",
+
+        });
+
+    };
+    const removeProduct = (product) => {
+        dispatch({
+            type: "REMOVE_PRODUCT",
+            payload: product,
+        });
+    };
+    
+    const removeOneProduct = (index) => {
+        const updatedCart = [...state.cart];
+        updatedCart.splice(index, 1);
+        dispatch({
+            type: "SET_CART",
+            payload: updatedCart,
         });
     };
     return (
@@ -43,11 +59,13 @@ export const ProductsProvider = ({ children }) => {
         <ProductsContext.Provider
             value={{
                 products: state.products,
-                cart:state.cart,
+                cart: state.cart,
                 getProducts,
                 addCart,
-                clearCart
-                
+                clearCart,
+                removeProduct,
+                removeOneProduct
+
             }}
         >
             {children}
