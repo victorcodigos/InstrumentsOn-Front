@@ -26,8 +26,8 @@ function NavBar() {
 
     return (
         <>
-            <Navbar className="navMain" style={{ backgroundColor: 'rgba(9, 95, 116, 0.887)' }} data-bs-theme="dark">
-                <Container>
+            <Navbar className="navMain" style={{ backgroundColor: 'rgba(15, 100, 125, 0.887)' }} data-bs-theme="dark">
+                <Container className="nav">
                     <Navbar.Brand href="#home">Welcome to the store 😁 </Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/home"><HomeOutlined /></Nav.Link>
@@ -37,7 +37,7 @@ function NavBar() {
                                 <Nav.Link as={Link} to="/search"><SearchOutlined /></Nav.Link> 
                                 <Nav.Link as={Link} to="/audio"><PlayCircleOutlined /></Nav.Link>
                                 <Nav.Link as={Link} to="/profile"><ProfileOutlined /></Nav.Link>
-                                <Nav.Link as={Link} to="/cart"><Badge count={cart.length} shape="square" size="small" color="pink" style={{ marginLeft: '50px' }} > <ShoppingCartOutlined /></Badge>
+                                <Nav.Link as={Link} to="/cart"><Badge count={cart.length} shape="square" size="small" color="blue" style={{ marginLeft: '50px' }} > <ShoppingCartOutlined /></Badge>
                                 </Nav.Link> <Nav.Link onClick={logoutUser}><UserDeleteOutlined /></Nav.Link>
                             </>
                         ) : (
