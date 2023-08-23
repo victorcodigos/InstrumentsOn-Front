@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./ProductsView.scss"
 import { Card } from "antd";
-import { StarOutlined, StarFilled} from "@ant-design/icons";
+import { StarOutlined, StarFilled, CreditCardOutlined } from "@ant-design/icons";
 import axios from "axios";
 
 const API_URL = "http://localhost:3000";
@@ -57,8 +57,9 @@ function ProductsView() {
                 <p>NAME: {product.name}</p>
                 <p>TYPE: {product.type}</p>
                 <p>PRICE: {product.price} $</p>
+                <button className="btn-pay"><Link to="/paypal"><CreditCardOutlined /></Link></button>
+                <br /><button className="btn-products"><Link to="/products"> All Products </Link></button>
                 <button className="btn-cardX" onClick={() => addCart(product)}> ADD TO CART </button>
-                <button className="btn-products"><Link to="/products"> All Products </Link></button>
                 <div>
                     <h1>{handleText()}</h1>
                     {Array(5)

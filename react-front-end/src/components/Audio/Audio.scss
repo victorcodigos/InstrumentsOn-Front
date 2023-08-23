@@ -1,22 +1,44 @@
 ._2FsrM img,
 ._2_1sf img {
-  width: 25px; 
-  height: 25px; 
-  margin: 0 10px; 
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+  color: white;
+
 }
 
 ._oGACf {
-    color: white;
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.containerSlider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .swiper-container {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
   }
 
- 
-.container { 
-    max-width: 800px; 
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+  }
 }
-  
-  
-  
-  

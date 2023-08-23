@@ -5,8 +5,8 @@ import "./Products.scss"
 import { Link } from 'react-router-dom';
 
 const Products = () => {
-    const { getProducts, products, addCart} = useContext(ProductsContext)
-    console.log( products)
+    const { getProducts, products, addCart } = useContext(ProductsContext)
+    console.log(products)
 
     useEffect(() => {
         getProducts()
@@ -15,7 +15,7 @@ const Products = () => {
         <div className="products-container" >
             {products?.map((product) => {
                 return <Card className="card-products"
-                    style={{ width: 300, border: "1px solid black", margin: "1%"}}
+                    style={{ width: 300, border: "1px solid black", margin: "1%" }}
                     key={product.id}
                     title={product.id}>
                     <p>NAME: {product.name}</p>

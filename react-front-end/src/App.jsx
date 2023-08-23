@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ProductsProvider } from './context/ProductsContext/ProductsState'
 import { UserProvider } from './context/UserContext/UserState'
 import { OrdersProvider } from './context/OrdersContext/OrdersContext'
-
 import PageNotFound from './components/PageNotFound/PageNotFound'
 import ProductsView from './components/ProductsView/ProductsView'
 import Login from './components/Login/Login'
@@ -15,8 +14,10 @@ import Search from './components/Search/Search'
 import NavBar from './components/NavBar/NavBar'
 import VideoBack from './components/VideoBack/VideoBack'
 import Audio from './components/Audio/Audio'
-import Image from './components/Image/Image';
+import Image from './components/Image/Image'
+import Paypal from './components/PayPal/PayPal';
 import './App.css'
+
 
 function App() {
 
@@ -30,7 +31,8 @@ function App() {
               <OrdersProvider>
                 <NavBar />
                 <Routes>
-                <Route path="/image" element={<Image />} />
+                  <Route path="/paypal" element={<Paypal />} />
+                  <Route path="/image" element={<Image />} />
                   <Route path="/audio" element={<Audio />} />
                   <Route path="/register" element={<Register />} />
                   <Route path="/home" element={<VideoBack />} />
