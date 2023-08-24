@@ -3,11 +3,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f000;
-    margin-top: -270px
-    
+    background-color: rgba(9, 95, 116, 0.152);
+    margin-top: 200px;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 5px rgb(252, 252, 252);
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
-.valor{
-    color:white
+.valor {
+    color: white
 }

@@ -6,15 +6,7 @@
     width: 100vh;
     object-fit: cover;
     
-    .video-container{
-
-        width: 100%;
-        max-width: 800px; 
-        padding-top: 56.25%; 
-        position: relative;
-        top: 10%;
-        
-    }
+    
 
     .overplay {
         top: 29%;
@@ -31,7 +23,7 @@
     
     }
 
-    ._2FsrM img,
+._2FsrM img,
 ._2_1sf img {
   width: 25px; 
   height: 25px; 
@@ -41,7 +33,14 @@
 ._oGACf {
     color: white;
   }
-
     
+}
+
+._oGACf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 

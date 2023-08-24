@@ -6,7 +6,7 @@ const Image = () => {
     const upload = () => {
         const formData = new FormData()
         formData.append('file', file)
-        axios.post('http://localhost:3000/products/all', formData)
+        axios.post('http://localhost:3000/products/', formData)
         .then ( res => {})
         .catch(error => console.log(error))
     }

@@ -4,7 +4,7 @@ import './PageNotFound.scss'
 const PageNotFound = () => {
     return (
         <div class="notFound">
-            <img src={link} />
+            <img className="img" src={link} />
         </div>
 
     )

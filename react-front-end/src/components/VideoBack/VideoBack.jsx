@@ -41,7 +41,7 @@ const VideoBack = () => {
         <Player className="audio" 
             trackList={tracks}
             includeTags={false}
-            includeSearch={false}
+            includeSearch={true}
             showPlayList={false}
             autoPlayNextTrack={false}/>
         </div>

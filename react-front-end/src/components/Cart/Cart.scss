@@ -5,42 +5,41 @@
     padding: 0rem;
     background-size: cover;
     background-position: center;
-    height: 170vh;
+    height: 270vh;
     width: 70vw;
+    
 
 
 
     .divider {
         font-size: large;
         color: white;
+        
 
     }
 
     .list {
+        box-shadow: 0px 0px 5px rgb(252, 252, 252);
         background-color: rgba(9, 95, 116, 0.282);
         border-color: rgba(9, 95, 116, 0.282);
-
     }
-
     .products {
         font-size: large;
         color: white;
     }
-
     .btn {
         background-color: rgba(169, 199, 206, 0);
         color: white;
-
     }
 
     .btn-in {
-
+        box-shadow: 0px 0px 5px rgb(252, 252, 252);
         background-color: rgba(9, 95, 116, 0.408);
         color: white;
     }
 
     .btn-in-in {
-
+        box-shadow: 0px 0px 5px rgb(252, 252, 252);
         background-color: rgba(9, 95, 116, 0.408);
         color: white;
         padding-left: 8%;
@@ -98,13 +97,13 @@
     box-shadow: 0px 0px 5px rgb(252, 252, 252);
     z-index: 100;
     color: white;
-}
 
-@media (max-width: 768px) {
-    .total {
-        top: 10px;
-        right: 10px;
-        font-size: 14px;
-        padding: 5px;
+    @media (max-width: 768px) {
+        .total {
+            top: 10px;
+            right: 10px;
+            font-size: 14px;
+            padding: 5px;
+        }
     }
 }

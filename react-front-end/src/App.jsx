@@ -15,7 +15,8 @@ import NavBar from './components/NavBar/NavBar'
 import VideoBack from './components/VideoBack/VideoBack'
 import Audio from './components/Audio/Audio'
 import Image from './components/Image/Image'
-import Paypal from './components/PayPal/PayPal';
+import Paypal from './components/PayPal/PayPal'
+
 import './App.css'
 
 

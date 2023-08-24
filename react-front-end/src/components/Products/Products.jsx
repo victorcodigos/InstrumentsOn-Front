@@ -21,6 +21,7 @@ const Products = () => {
                     <p>NAME: {product.name}</p>
                     <p>TYPE: {product.type}</p>
                     <p>PRICE: {product.price} $</p>
+                    <p><img src={product.image}/></p>
                     <br /><button className="btn-details"><Link to={`/product/${product.id}`}> Details </Link></button>
                     <button className="btn-card" onClick={() => addCart(product)}>ADD TO CART </button>
                 </Card>

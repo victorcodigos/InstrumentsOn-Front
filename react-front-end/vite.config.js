@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
-    include: ['ra-data-json-server']
+    include: ['ra-data-json-server'],
+    optimizeDeps: { exclude: ["swiper/react", "swiper/types"], },
+    
   }
 })

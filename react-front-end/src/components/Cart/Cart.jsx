@@ -5,8 +5,6 @@ import { OrdersContext } from '../../context/OrdersContext/OrdersContext';
 import { RestOutlined , DeleteFilled } from '@ant-design/icons';
 import "./Cart.scss";
 
-
-
 const Cart = () => {
     const { cart, clearCart, removeProduct, removeOneProduct } = useContext(ProductsContext);
     const { createOrder } = useContext(OrdersContext)
@@ -16,7 +14,7 @@ const Cart = () => {
         return cart.reduce((total, product) => total + product.price, 0);
     };
 
-    const data = cart.map(product => product.name);
+    const data = cart.map(product => product.name); 
     return (
         <>
             <div className="cart-container">

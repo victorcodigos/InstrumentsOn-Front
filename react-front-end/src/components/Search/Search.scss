@@ -1,5 +1,5 @@
 .App {
-    background-color: rgba(100, 104, 104, 0.053);
+    background-color: rgba(61, 194, 194, 0.053);
     
 
     .container-input {
@@ -21,6 +21,11 @@
         font-size: large;
         color: white;
         
+    }
+
+    .form-control-inputBuscar{
+
+        width: 350px;
     }
 
 }

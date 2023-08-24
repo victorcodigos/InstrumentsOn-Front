@@ -1,14 +1,10 @@
-.GlobalContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .footer-basic {
     padding: 1.5em;
     background-color: #d33939;
-    color: rgb(38, 30, 30);
+    color: white;
     background-color: rgba(9, 95, 116, 0.807); 
+    box-shadow: 0px 0px 5px rgb(252, 252, 252);
 
     ul {
         display: flex;
@@ -28,7 +24,8 @@
 
         a:hover {
             opacity: 1;
-            color: rgb(204, 18, 18);
+            color: rgb(73, 20, 180);
+            box-shadow: 0px 0px 5px rgb(252, 252, 252);
         }
     }
 
@@ -57,8 +54,9 @@
 
     .social>a:hover {
         opacity: 0.9;
-        color: rgb(204, 18, 18);
-        border: 1px solid rgb(204, 18, 18);
+        color: rgb(73, 20, 180);
+        border: 1px solid  rgb(73, 20, 180);
+        box-shadow: 0px 0px 5px rgb(252, 252, 252);
     }
 
     .copyright {
@@ -68,9 +66,7 @@
         color: rgb(251, 241, 251);
         margin-bottom: 0;
         
+        
     }
 
-    .copyright>a:hover {
-        color: yellow;
-    }
 }

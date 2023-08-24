@@ -56,8 +56,8 @@ function Search() {
                             <th>| ID | </th>
                             <th>| NAME | </th>
                             <th>| TYPE | </th>
-                            <th>| YEAR | </th>
                             <th>| PRICE | </th>
+                            <th>| YEAR | </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -67,8 +67,8 @@ function Search() {
                                     <td> {product.id}</td>
                                     <td> {product.name}</td>
                                     <td> {product.type}</td>
-                                    <td> {product.year}</td>
                                     <td> {product.price}</td>
+                                    <td> {product.year}</td>
                                 </tr>
                             ))}
                     </tbody>
