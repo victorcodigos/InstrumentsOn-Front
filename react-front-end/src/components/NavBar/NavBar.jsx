@@ -31,14 +31,14 @@ function NavBar() {
                     <Navbar.Brand href="#home"> Welcome to the store! 😊 </Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/home"><HomeOutlined /></Nav.Link>
-                        <Nav.Link as={Link} to="/products"> <FireOutlined/></Nav.Link>
+                        <Nav.Link as={Link} to="/products"> <FireOutlined /></Nav.Link>
                         {token ? (
                             <>
-                                <Nav.Link as={Link} to="/search"><SearchOutlined /></Nav.Link> 
+                                <Nav.Link as={Link} to="/cart"><Badge count={cart.length} shape="square" size="small" color="blue" style={{ margin: '1px' }} > <ShoppingCartOutlined /></Badge></Nav.Link>
+                                <Nav.Link as={Link} to="/search"><SearchOutlined /></Nav.Link>
                                 <Nav.Link as={Link} to="/audio"><PlayCircleOutlined /></Nav.Link>
-                                <Nav.Link as={Link} to="/cart"><Badge count={cart.length} shape="square" size="small" color="blue" style={{ marginLeft: '50px' }} > <ShoppingCartOutlined /></Badge>
-                                </Nav.Link> <Nav.Link onClick={logoutUser}><UserDeleteOutlined /></Nav.Link>
-                                <Nav.Link as={Link} to="/profile"> {user && user.name ? `Hello  ${user.name}`: ""} <SketchOutlined /></Nav.Link> 
+                                <Nav.Link onClick={logoutUser}><UserDeleteOutlined /></Nav.Link>
+                                <Nav.Link as={Link} to="/profile"> {user && user.name ? `Hello  ${user.name}` : ""} <SketchOutlined /></Nav.Link>
                             </>
                         ) : (
                             <>
@@ -51,7 +51,7 @@ function NavBar() {
             </Navbar>
         </>
     );
-   
+
 }
 
 export default NavBar;

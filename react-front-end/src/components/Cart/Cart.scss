@@ -83,27 +83,27 @@
     
     }
 
-}
-
-.total {
-
-
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: rgba(0, 100, 125, 0);
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgb(252, 252, 252);
-    z-index: 100;
-    color: white;
-
-    @media (max-width: 768px) {
-        .total {
-            top: 10px;
-            right: 10px;
-            font-size: 14px;
-            padding: 5px;
+    .total {
+    
+    
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: rgba(0, 100, 125, 0);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgb(252, 252, 252);
+        z-index: 100;
+        color: white;
+    
+        @media (max-width: 768px) {
+            .total {
+                top: 10px;
+                right: 10px;
+                font-size: 14px;
+                padding: 5px;
+            }
         }
     }
 }
+

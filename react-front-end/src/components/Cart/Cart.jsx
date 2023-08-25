@@ -31,8 +31,8 @@ const Cart = () => {
                     <Button onClick={() => removeProduct(cart[index])} className="remove-button"><DeleteFilled /></Button>
                     <Button onClick={() => removeOneProduct(index)} className="remove-buttonX"><RestOutlined /></Button></List.Item>}
                 />
-            </div>
             <div className="total">Total:  € {calculateTotalPrice().toFixed(2)}</div>
+            </div>
         </>
     );
 }

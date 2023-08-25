@@ -8,5 +8,6 @@ export default defineConfig({
     include: ['ra-data-json-server'],
     optimizeDeps: { exclude: ["swiper/react", "swiper/types"], },
     
+    
   }
 })
