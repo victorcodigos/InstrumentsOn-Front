@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ProductsProvider } from './context/ProductsContext/ProductsState'
 import { UserProvider } from './context/UserContext/UserState'
 import { OrdersProvider } from './context/OrdersContext/OrdersContext'
+import Contact from './components/Contact/Contact';
 import PageNotFound from './components/PageNotFound/PageNotFound'
 import ProductsView from './components/ProductsView/ProductsView'
 import Login from './components/Login/Login'
@@ -17,17 +18,18 @@ import VideoBack from './components/VideoBack/VideoBack'
 import Audio from './components/Audio/Audio'
 import Image from './components/Image/Image'
 import Paypal from './components/PayPal/PayPal'
-import ProductImage from './components/ProductsImage/ProductsImage';
+import ProductsImage from './components/ProductsImage/ProductsImage';
 import Carousel from "react-multi-carousel";
 import { productData, responsive } from "./data";
 import "react-multi-carousel/lib/styles.css";
 
-
-
-
 function App() {
 
-  const product = productData.map((item) => (<ProductImage name={item.name} url={item.imageurl} price={item.price} description={item.description} />));
+  const product = productData.map((item) => (
+    <ProductsImage name={item.name}
+      url={item.imageurl} price={item.price}
+      description={item.description}
+    />));
 
   return (
     <>
@@ -44,15 +46,18 @@ function App() {
                   <Route path="/audio" element={<Audio />} />
                   <Route path="/register" element={<Register />} />
                   <Route path="/home" element={<VideoBack />} />
-                  <Route path="/products" element={<Products /> } />
+                  <Route path="/products" element={<Products />} />
                   <Route path="/profile" element={<Profile />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/cart" element={<Cart />} />
                   <Route path="/search" element={<Search />} />
                   <Route path="/product/:productId" element={<ProductsView />} />
+                  <Route path="/contact" element={<Contact />} />
                   <Route path="/*" element={<PageNotFound />} />
                 </Routes>
-                <Carousel showDots={true} responsive={responsive}>{product}</Carousel>
+                <Carousel showDots={true}
+                  responsive={responsive}>
+                  {product}</Carousel>
                 <Footer />
               </OrdersProvider>
             </ProductsProvider>
