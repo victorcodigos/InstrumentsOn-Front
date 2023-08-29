@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
+    
 
     .card-box {
     
@@ -22,7 +23,7 @@
         flex-wrap: wrap;
         gap: 2rem;
         color: white;
-        
+        box-shadow: 0px 0px 5px rgb(252, 252, 252);
         .shopping{
         
             color: aqua;
@@ -36,6 +37,11 @@
             margin-top: 7%
         }
         
+        .totalX {
+            
+            background-color: rgba(0, 100, 125, 0);
+            color: aqua; 
+        }
         
     }
 }

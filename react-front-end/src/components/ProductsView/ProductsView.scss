@@ -12,6 +12,7 @@
         padding: 2%;
         gap: 5%;
         width: calc(30% - 20px);
+        box-shadow: 0px 0px 5px rgb(252, 252, 252);
 
     }
 
@@ -19,6 +20,7 @@
         background-color: rgba(9, 95, 116, 0.408);
         border-radius: 5%;
         margin-top: 10px;
+        box-shadow: 0px 0px 5px rgb(252, 252, 252);
 
     }
 
@@ -26,6 +28,7 @@
         background-color: rgba(9, 95, 116, 0.408);
         border-radius: 5%;
         margin-top: 10px;
+        box-shadow: 0px 0px 5px rgb(252, 252, 252);
     }
 
     .star-icon {
@@ -34,16 +37,20 @@
         font-size: 1.2rem;
         cursor: pointer;
         transition: color 0.3s;
+        
     }
     
     .star-icon.filled {
         color: gold; 
+        
+
     }
 
     .btn-pay{
         background-color: rgba(9, 95, 116, 0.408);
         border-radius: 5%;
         padding: 3.5%;
+        box-shadow: 0px 0px 5px rgb(252, 252, 252);
         
         
     }

@@ -1,0 +1,77 @@
+.landingpage{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    transition: 0.5s;
+    font-family: serif;
+
+    .video-bg {
+
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        background-color: black;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 6em;
+        border-bottom: 2px solid white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .menu{
+
+        height: 3em;
+        width: 4em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 2em;
+        cursor: pointer;
+    }
+
+    .home-text{
+        width: 85%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+       
+
+        .h1 {
+            font-size: 2em;
+            color: white;
+            font-family: 'Merianda';
+    
+        }
+        .p {
+            justify-content: flex-end;
+            font-size: 1em;
+            color: white;
+    
+        }
+    }
+
+
+}
+
+.about{
+    color: rgb(255, 255, 255);
+    background-color: rgba(25, 27, 28, 0.75);
+    font-size: large;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}

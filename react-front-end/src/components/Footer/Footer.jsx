@@ -11,13 +11,13 @@ const Footer = () => {
                         <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/"><Icon icon="ion:logo-snapchat" /></a>
                         <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/"><Icon icon="ion:logo-twitter" /></a>
                         <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/"><Icon icon="ion:logo-facebook" /></a>
-                        <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/"><Icon icon="ion:logo-linkedin" /></a></div>
+                        <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/"><Icon icon="ion:logo-linkedin" /></a>
+                        <a href="https://github.com/victorcodigos/"><Icon icon="ion:logo-github" /></a></div>
                     <ul className="list-inline">
-                        <li className="list-inline-item"><a href="#">Home</a></li>
-                        <li className="list-inline-item"><a href="#">Services</a></li>
-                        <li className="list-inline-item"><a href="#">About</a></li>
-                        <li className="list-inline-item"><a href="#">Terms</a></li>
-                        <li className="list-inline-item"><a href="#">Privacy policy</a></li>
+                        <li className="list-inline-item"><a href="http://localhost:5173/home">Home</a></li>
+                        <li className="list-inline-item"><a href="http://localhost:5173/aboutus">About</a></li>
+                        <li className="list-inline-item"><a href="http://localhost:5173/contact">Contact</a></li>
+                        <li className="list-inline-item"><a href="http://localhost:5173/paypal">Payments</a></li>
                     </ul>
                     <p className="copyright"> Created by Victor Macedo. Copyright © 2023 . All rights reserved.</p>
                 </footer>

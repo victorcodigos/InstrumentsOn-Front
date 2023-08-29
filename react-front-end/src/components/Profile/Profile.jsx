@@ -12,6 +12,10 @@ const Profile = () => {
     getUserInfo();
   }, []);
 
+  const calculateTotalPrice = () => {
+    return cart.reduce((total, product) => total + product.price, 0);
+};
+
   if (!user) {
     return <span><Spin size="large" /></span>;
   }
@@ -32,6 +36,7 @@ const Profile = () => {
             </div>
           )}
         </div>
+        <div className="totalX">Total:  € {calculateTotalPrice().toFixed(2)}</div>
       </Card>
     </div>
 
