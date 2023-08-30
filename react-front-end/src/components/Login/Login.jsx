@@ -74,7 +74,7 @@ const Login = () => {
                     <Input.Password placeholder="Enter your password"/>
                 </Form.Item>
 
-                <Form.Item
+                <Form.Item 
                     name="remember"
                     valuePropName="checked"
                     wrapperCol={{
@@ -82,7 +82,7 @@ const Login = () => {
                         span: 16,
                     }}
                 >
-                    <Checkbox>Remember me</Checkbox>
+                   
                 </Form.Item>
 
                 <Form.Item
@@ -91,9 +91,10 @@ const Login = () => {
                         span: 16,
                     }}
                 >
-                    <Button type="primary" htmlType="submit">
+                    <Button type="primary" htmlType="submit" style={{ backgroundColor: "rgba(9, 95, 116, 0.807)", color: "white" }}>
                         Submit
                     </Button>
+                    
                 </Form.Item>
             </Form>
         </div>

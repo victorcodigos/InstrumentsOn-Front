@@ -18,11 +18,13 @@ import NavBar from './components/NavBar/NavBar'
 import Home from './components/Home/Home'
 import Audio from './components/Audio/Audio'
 import Paypal from './components/PayPal/PayPal'
-import ProductsImage from './components/ProductsImage/ProductsImage';
+import ProductsImage from './components/ProductsImage/ProductsImage'
 import Carousel from "react-multi-carousel"
 import ChatBot from './components/ChatBot/ChatBot'
 import AboutUs from './components/AboutUs/AboutUs'
 import "react-multi-carousel/lib/styles.css"
+import DropSearch from './components/DropSearch/DropSearch'
+
 
 function App() {
 
@@ -41,13 +43,13 @@ function App() {
             <ProductsProvider>
               <OrdersProvider>
                 <NavBar />
+                <DropSearch/>
                 <Routes>
                   <Route path="/aboutus" element={<AboutUs />} />
                   <Route path="/chatbot" element={<ChatBot />} />
                   <Route path="/paypal" element={<Paypal />} />
                   <Route path="/audio" element={<Audio />} />
                   <Route path="/register" element={<Register />} />
-                  <Route path="/home" element={<Home />} />
                   <Route path="/products" element={<Products />} />
                   <Route path="/profile" element={<Profile />} />
                   <Route path="/login" element={<Login />} />
@@ -55,6 +57,7 @@ function App() {
                   <Route path="/search" element={<Search />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/product/:productId" element={<ProductsView />} />
+                  <Route path="/home" element={<Home />} />
                   <Route path="/*" element={<PageNotFound />} />
                 </Routes>
                 <Carousel showDots={true} responsive={responsive}>{product}</Carousel>

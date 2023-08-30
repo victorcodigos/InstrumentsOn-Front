@@ -1,20 +1,18 @@
-import { Form, Input, Button } from "antd";
-import { useContext, useState } from "react";
+import React, { useContext } from "react";
+import { Button, Form, Input } from "antd";
 import { UserContext } from "../../context/UserContext/UserState";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import PhoneInput from "react-phone-input-2";
-import "react-phone-input-2/lib/style.css";
 import "./Register.scss";
 
 const Register = () => {
-    const { register, message } = useContext(UserContext);
+    const { register } = useContext(UserContext);
     const navigate = useNavigate();
 
     const onFinish = (values) => {
         register(values);
         setTimeout(() => {
-            navigate("/home");
+            navigate("/login");
 
         }, 3000)
     };
@@ -23,68 +21,48 @@ const Register = () => {
         console.log("Failed:", errorInfo);
     }
 
-    const [PhoneNumber, setPhoneNumber] = useState('')
-    const [valid, setValid] = useState(true)
-
-    const handleChange = (value) => {
-        setPhoneNumber(value);
-        setValid(validatePhoneNumber(value));
-    }
-
-    const validatePhoneNumber = (PhoneNumber) => {
-        const phoneNumberPattern = /^\d{10}$/;
-        return phoneNumberPattern.test(PhoneNumber)
-    }
 
     return (
-        <>
         <div className="container-mainX">
             <Form
-                name="basic"
-                labelCol={{ span: 8 }}
-                wrapperCol={{ span: 16 }}
-                initialValues={{ remember: true }}
-                onFinish={onFinish}
-                onFinishFailed={onFinishFailed}
-                autoComplete="off" >
+                name="basic" labelCol={{ span: 8 }} wrapperCol={{ span: 16 }} style={{ maxWidth: 600 }}
+                onFinish={onFinish} onFinishFailed={onFinishFailed} autoComplete="off">
                 <Form.Item className="register"
                     label="Name"
                     name="name"
-                    rules={[{ required: true, message: "Please input your name!" }]} ><Input />
+                    rules={[{ required: true, message: "Please insert your name!" },]}>
+                    <Input placeholder="insert your name here"/>
+                </Form.Item>
+                <Form.Item
+                    label="Last name"
+                    name="lastname"
+                    rules={[{ required: true, message: "Please insert your last name!" },]}>
+                    <Input placeholder="insert your last name here"/>
                 </Form.Item>
                 <Form.Item
                     label="Email"
                     name="email"
-                    rules={[{ required: true, message: "Please input your email!" }]}> <Input />
+                    rules={[{ required: true, message: "Please put your email!" },
+                    { type: "email", message: "Please insert a correct email!" },]}>
+                    <Input placeholder="insert your email here" />
                 </Form.Item>
                 <Form.Item
                     label="Password"
                     name="password"
-                    rules={[{ required: true, message: "Please input your password!" }]}>
-                    <Input.Password />
-            <label>
-                :
-                <PhoneInput
-                country={'es'}
-                value={PhoneNumber}
-                onChange={handleChange}
-                inputProps={{required: true}}/>
-            </label>
-            {valid && <p> Please enter a valid number</p> }
+                    rules={[{ required: true, message: "Please put your password!" },]}>
+                    <Input.Password  placeholder="insert your password here"/>
                 </Form.Item>
-                <div className>
+                <div>
                     <span> Already have an account?</span> <Link to='/login'>Login</Link>
                 </div>
-                {message}
-                <br />
-                <Form.Item wrapperCol={{ offset: 9, span: 16 }}>
-                    <Button type="primary" htmlType="submit"> Send</Button>
+                <Form.Item wrapperCol={{offset: 8, span: 16}}>
+                    <Button type="primary" htmlType="submit" style={{ backgroundColor: "rgba(9, 95, 116, 0.807)", color: "white" }}>
+                        Register
+                    </Button>
                 </Form.Item>
             </Form>
         </div>
-        
-        </>
-    )
-}
+    );
+};
 
 export default Register
