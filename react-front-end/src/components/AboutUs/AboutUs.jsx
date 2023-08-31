@@ -10,10 +10,6 @@ const LandingPage = () => {
             <div className="navbar">
                 <div className="menu">
                 </div>
-                <div className="home-text">
-                    <h1 className="h1"> ABOUT US: </h1>
-                    <p className="p">Thank you for visiting our website!</p>
-                </div>
             </div>
         </div>
             <div className="about">

@@ -15,7 +15,8 @@ import {
     InstagramFilled,
     LinkedinFilled,
     GithubFilled,
-    TwitterCircleFilled
+    TwitterCircleFilled,
+    WechatOutlined
 } from '@ant-design/icons';
 
 export default function DropSearch() {
@@ -44,6 +45,7 @@ export default function DropSearch() {
                                 <li><a class="dropdown-item" href="http://localhost:5173/products"><FireOutlined /> • Products </a></li>
                                 <li><a class="dropdown-item" href="http://localhost:5173/aboutus"><GlobalOutlined /> • About us </a></li>
                                 <li><a class="dropdown-item" href="http://localhost:5173/paypal"> <CreditCardOutlined /> • Payments </a></li>
+                                <li><a class="dropdown-item" href="http://localhost:5173/chatbot"> <WechatOutlined /> • Chat with us </a></li>
                                 <li><hr class="dropdown-divider"/><strong>••  Social Networks •• </strong></li>
                                 <li><a class="dropdown-item" href="https://www.linkedin.com/in/victor-macedo-4a8901210/"><LinkedinFilled /> • Linkedin </a></li>
                                 <li><a class="dropdown-item" href="https://www.instagram.com/macedodedeus/"><InstagramFilled /> • Instagram </a></li>

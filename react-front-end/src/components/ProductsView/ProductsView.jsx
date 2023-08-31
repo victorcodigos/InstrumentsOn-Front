@@ -56,7 +56,12 @@ function ProductsView() {
                 title={product.id}>
                 <p>NAME: {product.name}</p>
                 <p>TYPE: {product.type}</p>
-                <p>PRICE: {product.price} $</p>
+                <p>PRICE: {product.price} €</p>
+                <div style={{ flex: 1 }}>
+                        <img
+                            src={product.image}
+                            style={{ width: "100%", height: "auto", image: "cover" }} />
+                    </div>
                 <button className="btn-pay"><Link to="/paypal"><CreditCardOutlined /></Link></button>
                 <br /><button className="btn-products"><Link to="/products"> All Products </Link></button>
                 <button className="btn-cardX" onClick={() => addCart(product)}> ADD TO CART </button>
