@@ -18,8 +18,9 @@ const Footer = () => {
                         <li className="list-inline-item"><a href="http://localhost:5173/aboutus">About</a></li>
                         <li className="list-inline-item"><a href="http://localhost:5173/contact">Contact</a></li>
                         <li className="list-inline-item"><a href="http://localhost:5173/paypal">Payments</a></li>
+                        <li className="list-inline-item"><a href="http://localhost:5173/chatbot">Complaints</a></li>
                     </ul>
-                    <p className="copyright"> Created by Victor Macedo. Copyright © 2023 . All rights reserved.</p>
+                    <p className="copyright"> Created by Victor Macedo. Copyright © 2023 . All rights reserved.</p> 
                 </footer>
             </div>
         </div>

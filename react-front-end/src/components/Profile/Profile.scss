@@ -11,8 +11,6 @@
         width: 70vw;
         margin: auto;
         padding: 2rem;
-        background-image: linear-gradient(rgba(62, 64, 65, 0.501), rgba(0, 0, 0, 0.4)),
-            url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
         background-size: cover;
         background-position: center center;
         display: flex;
@@ -24,11 +22,10 @@
         gap: 2rem;
         color: white;
         box-shadow: 0px 0px 5px rgb(252, 252, 252);
-        .shopping{
-        
-            color: aqua;
-            
-        }
+        font-family: 'Lucida Sans Regular';
+        background-image: linear-gradient(rgba(62, 64, 65, 0.501), rgba(0, 0, 0, 0.4)),
+            url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
         
         .products-in-cart {
             

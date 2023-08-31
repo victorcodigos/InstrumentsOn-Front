@@ -1,9 +1,8 @@
 
 .footer-basic {
     padding: 1.5em;
-    background-color: #d33939;
     color: white;
-    background-color: rgba(9, 95, 116, 0.807); 
+    background-color: rgba(9, 95, 116, 0.947); 
     box-shadow: 0px 0px 5px rgb(252, 252, 252);
 
     ul {
@@ -24,8 +23,8 @@
 
         a:hover {
             opacity: 1;
-            color: rgb(73, 20, 180);
-            box-shadow: 0px 0px 5px rgb(252, 252, 252);
+            color: gold;
+            
         }
     }
 
@@ -54,8 +53,8 @@
 
     .social>a:hover {
         opacity: 0.9;
-        color: rgb(73, 20, 180);
-        border: 1px solid  rgb(73, 20, 180);
+        color: gold;
+        border: 2px solid  rgb(255, 215, 0);
         box-shadow: 0px 0px 5px rgb(252, 252, 252);
     }
 

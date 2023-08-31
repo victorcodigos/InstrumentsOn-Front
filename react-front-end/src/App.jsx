@@ -4,6 +4,7 @@ import { ProductsProvider } from './context/ProductsContext/ProductsState'
 import { UserProvider } from './context/UserContext/UserState'
 import { OrdersProvider } from './context/OrdersContext/OrdersContext'
 import { productData, responsive } from "./data"
+import "react-multi-carousel/lib/styles.css"
 import Contact from './components/Contact/Contact'
 import PageNotFound from './components/PageNotFound/PageNotFound'
 import ProductsView from './components/ProductsView/ProductsView'
@@ -22,7 +23,6 @@ import ProductsImage from './components/ProductsImage/ProductsImage'
 import Carousel from "react-multi-carousel"
 import ChatBot from './components/ChatBot/ChatBot'
 import AboutUs from './components/AboutUs/AboutUs'
-import "react-multi-carousel/lib/styles.css"
 import DropSearch from './components/DropSearch/DropSearch'
 
 
