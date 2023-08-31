@@ -1,16 +1,13 @@
 import React from 'react'
 import Player from '@madzadev/audio-player';
-import './Audio.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import { register } from "swiper/element/bundle"
-register();
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
+import './Audio.scss';
+register();
 
 const tracks = [
   {
@@ -45,6 +42,21 @@ const Audio = () => {
 
   return (
     <>
+      <div className="music-on">
+        <h4>Music holds a special place in our lives for numerous reasons. Here's why music is so wonderful:</h4>
+        Emotional Expression:
+        Music provides a powerful outlet for expressing emotions that might be hard to put into words. Whether it's joy, sadness, love, or anger, music allows us to connect with our feelings in a profound way.
+        Stress Relief:
+        Listening to music has been proven to reduce stress and anxiety. The melodies and rhythms can have a soothing effect on our minds, helping us relax and unwind.
+        Inspiration and Creativity:
+        Music has the ability to spark creativity and inspire us to think outside the box. Many artists and creators find that music fuels their imaginative processes.
+        Connection and Unity:
+        Music brings people together. It's a universal language that transcends cultural and language barriers, fostering a sense of unity among individuals from diverse backgrounds.
+        Enhanced Focus and Productivity:
+        The right music can boost focus and productivity. Many find that music helps them concentrate while working, studying, or engaging in other tasks.
+        Memories and Nostalgia:
+        Certain songs can transport us back in time, evoking memories and nostalgia. These musical time capsules hold emotions and experiences that remain close to our hearts.
+      </div>
       <div className="containerSlider">
         <Swiper
           slidesPerView={1} pagination={{ clickable: true }} navigation autoplay={{ delay: 3000 }} >

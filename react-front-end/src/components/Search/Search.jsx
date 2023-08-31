@@ -3,16 +3,17 @@ import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Search.scss";
 
+
 function Search() {
     const [product, setProduct] = useState([]);
-    const [tableProduct, setProductName] = useState([]);
+    const [tableProduct, setTableProduct] = useState([]);
     const [search, setSearch] = useState("");
 
     const apiGet = async () => {
         axios.get("http://localhost:3000/products/all")
             .then(res => {
                 setProduct(res.data)
-                setProductName(res.data)
+                setTableProduct(res.data)
             }).catch(err => {
                 console.log(err)
             })
@@ -29,7 +30,6 @@ function Search() {
             if (element.name.toString().toLowerCase().includes(finishSearch.toLowerCase())
                 || element.id.toString().toLowerCase().includes(finishSearch.toLowerCase())
                 || element.type.toString().toLowerCase().includes(finishSearch.toLowerCase())
-                || element.year.toString().toLowerCase().includes(finishSearch.toLowerCase())
                 || element.price.toString().toLowerCase().includes(finishSearch.toLowerCase())
 
             ) {
@@ -39,25 +39,24 @@ function Search() {
         setProduct(resultSearch)
     }
 
-
     useEffect(() => {
         apiGet();
     }, [])
+
+
     return (
         <div className="App">
             <div className="container-input">
-                <p><br /><input className="form-control-inputBuscar" value={search} placeholder="search your product 🔎" onChange={handleChange} /></p>
-
+                <p><br /><input className="form-control-inputBuscar" value={search} placeholder="search your product here 🔎" onChange={handleChange} /></p>
             </div>
             <div className="table-responsive">
                 <table className="table-sm-table-bordered">
                     <thead>
                         <tr>
-                            <th>| ID | </th>
-                            <th>| NAME | </th>
-                            <th>| TYPE | </th>
-                            <th>| PRICE | </th>
-                            <th>| YEAR | </th>
+                            <th>ID | </th>
+                            <th>NAME | </th>
+                            <th>TYPE | </th>
+                            <th>PRICE </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -68,7 +67,6 @@ function Search() {
                                     <td> {product.name}</td>
                                     <td> {product.type}</td>
                                     <td> {product.price}</td>
-                                    <td> {product.year}</td>
                                 </tr>
                             ))}
                     </tbody>

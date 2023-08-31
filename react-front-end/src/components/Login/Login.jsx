@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Button, Checkbox, Form, Input, notification } from 'antd';
 import { UserContext } from '../../context/UserContext/UserState';
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./Login.scss";
 
 const Login = () => {
@@ -25,6 +26,7 @@ const Login = () => {
         console.log('Failed:', errorInfo);
     };
     return (
+        <>
         <div className="container-main">
             <Form
                 name="basic"
@@ -44,7 +46,7 @@ const Login = () => {
                 onFinishFailed={onFinishFailed}
                 autoComplete="off"
             >
-                <Form.Item className="login"
+                <Form.Item
                     label="Email"
                     name="email"
                     rules={[
@@ -91,15 +93,22 @@ const Login = () => {
                         span: 16,
                     }}
                 >
-                    <Button type="primary" htmlType="submit" style={{ backgroundColor: "rgba(9, 95, 116, 0.807)", color: "white" }}>
+                    <div>
+                        <span> Do not have an account?</span> <Link to='/register'>Register</Link>
+                    </div>
+                    <br /><Button type="primary" htmlType="submit" style={{ backgroundColor: "rgba(9, 95, 116, 0.807)", color: "white" }}>
                         Submit
                     </Button>
                     
                 </Form.Item>
             </Form>
         </div>
+            <div className="login">
+            <h4>Welcome back to our website!</h4>We're grateful to see you again and appreciate your continued interest.
+            If there's anything you need or if you have any feedback to share, don't hesitate to get in touch. Thank you for being a valued member of our community!
+            </div>
+            </>
     )
-
 }
 
 export default Login

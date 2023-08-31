@@ -1,19 +1,20 @@
 .container-mainX {
-
+    
+    
     display: flex;
     text-align: center;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     height: 100vh;
-    background: linear-gradient(rgba(226, 220, 220, 0.509), rgba(45, 168, 168, 0));
+    background: linear-gradient(rgba(226, 220, 220, 0.662), rgba(45, 168, 168, 0));
 
+}
 
+.registering {
 
-    .register {
-
-        top: 10rem;
-
-
-    }
+    color: white;
+    font-family: 'Lucida Sans Regular';
+    font-size: large;
+    margin: 7%;
 
 }

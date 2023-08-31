@@ -16,7 +16,7 @@
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  
+
 }
 
 .containerSlider {
@@ -24,20 +24,20 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  
+
 
   .swiper-container {
     width: 100%;
     max-width: 800px;
     position: relative;
-    
+
   }
 
   .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
   }
 
   .image {
@@ -46,4 +46,12 @@
     border-radius: 10%;
     box-shadow: 0px 0px 5px rgb(252, 252, 252);
   }
+}
+
+.music-on {
+
+  color: white;
+  font-family: 'Lucida Sans Regular';
+  font-size: large;
+  margin: 7%;
 }

@@ -1,10 +1,10 @@
 import { ProductsContext } from "../../context/ProductsContext/ProductsState";
 import React, { useState, useEffect, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
-import "./ProductsView.scss"
 import { Card } from "antd";
 import { StarOutlined, StarFilled, CreditCardOutlined } from "@ant-design/icons";
 import axios from "axios";
+import "./ProductsView.scss"
 
 const API_URL = "http://localhost:3000";
 
