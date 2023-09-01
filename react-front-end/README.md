@@ -1,4 +1,4 @@
-# 1nd React Project - E-commerce
+ <h1 align="center"> 1nd React Project - E-commerce </h1>
 
  <h3 align="center">MERN STACK FRONTEND PROJECT</h3>
 
@@ -20,7 +20,7 @@
 - Home general overview
 
 <h1>
-  <img src="assets/webVictor.png"> </img>
+  <img src="./src/assets/webVictor.png"> </img>
   
   </h1> 
 
@@ -67,7 +67,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-In this project, an e-commerce is developed where users will register, log in, see products and create orders using the E-commerce API created in the 1st Backend Project <a href="https://github.com/sergiokano/Proyecto-BackEnd-E-commerce"></a>, 
+In this project, an e-commerce is developed where users will register, log in, see products and create orders using the E-commerce API created in the 1st Backend Project <a href="https://github.com/victorcodigos/react-front-end"></a>
 
 
 ### Views
@@ -97,10 +97,15 @@ In this project, an e-commerce is developed where users will register, log in, s
 
 
 ### Built With
+ <p align="left">
+<img align="center" alt="Rafa-Js" height="30" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+<img align="center" alt="Rafa-React" height="30" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+<img align="center" alt="Rafa-Node" height="30" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+<img align="center" alt="mysql" height="30" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg">
+ <img align="center" alt="jest" height="30" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg">
+ <img align="center" alt="npm" height="30" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg">
 
-* [![Node][Node.JS]][Node.JS-url]
-* [![React][React]][React-url]
-* [![SASS][SASS]][SASS-url]
+ </p>
 
 
 
@@ -158,7 +163,7 @@ _Below is an example of how you can instruct your audience on installing and set
 ## Products
 
 <h1>
-  <img src="assets/products.png"> </img>
+  <img src="./src/assets/products.png"> </img>
   
   </h1>
 
@@ -195,7 +200,7 @@ This project is under license of Victor Macedo
 ## ChatBot
 
 <h1>
-  <img src="assets/chatBot.png"> </img>
+  <img src="./src/assets/chatBot.png"> </img>
   
   </h1>
 
