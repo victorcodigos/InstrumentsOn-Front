@@ -1,6 +1,6 @@
  <h1 align="center"> 1nd React Project - E-commerce </h1>
 
- <h3 align="center">MERN STACK FRONTEND PROJECT</h3>
+ <h3 align="center"> ⚙️ MERN STACK FRONTEND PROJECT ⚙️</h3>
 
   <p align="center">
     E-commerce made using Javascript and React with Context and SASS.
@@ -15,7 +15,7 @@
 </div>
 
 <!-- PREVIEW -->
-## Preview 
+## Preview 🧑‍💻
 
 - Home general overview
 
@@ -51,7 +51,7 @@
 </details>
 
 <!-- ABOUT THE OBJECTIVES -->
-## Objectives
+## Objectives 💥
 ### Development of an e-commerce where users will:
 <objectives>
   <ol>
@@ -65,7 +65,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About The Project 🔎
 
 In this project, an e-commerce is developed where users will register, log in, see products and create orders using the E-commerce API created in the 1st Backend Project <a href="https://github.com/victorcodigos/react-front-end"></a>
 
@@ -98,12 +98,12 @@ In this project, an e-commerce is developed where users will register, log in, s
 
 ### Built With
  <p align="left">
-<img align="center" alt="Rafa-Js" height="30" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-<img align="center" alt="Rafa-React" height="30" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-<img align="center" alt="Rafa-Node" height="30" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
-<img align="center" alt="mysql" height="30" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg">
- <img align="center" alt="jest" height="30" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg">
- <img align="center" alt="npm" height="30" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg">
+<img align="center" alt="Rafa-Js" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+<img align="center" alt="Rafa-React" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+<img align="center" alt="Rafa-Node" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+<img align="center" alt="mysql" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg">
+ <img align="center" alt="jest" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg">
+ <img align="center" alt="npm" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg">
 
  </p>
 
@@ -115,12 +115,12 @@ In this project, an e-commerce is developed where users will register, log in, s
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Getting Started 😊
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Prerequisites 🔢
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
@@ -128,7 +128,7 @@ This is an example of how to list things you need to use the software and how to
   npm install react sass
   ```
 
-### Installation
+### Installation 🚀
 
 _Below is an example of how you can instruct your audience on installing and setting up your app.
 
@@ -150,7 +150,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 <!-- FUTURE -->
-## Future Roadmap
+## Future Roadmap 📍
 
 - [ ] Add a different style
 - [ ] Add more products
@@ -170,7 +170,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Contributing 😊
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -188,7 +188,7 @@ Don't forget to give the project a star! Thanks again!
 
 
 <!-- LICENSE -->
-## License
+## License 📲
 
 This project is under license of Victor Macedo
 
@@ -206,7 +206,7 @@ This project is under license of Victor Macedo
 
 
 <!-- CONTACT -->
-## Contact 
+## Contact 📩
 
   <p align="center">
  Victor Macedo
@@ -218,4 +218,4 @@ This project is under license of Victor Macedo
 
 ---
 
-Developed by [Victor Macedo](https://github.com/victorcodigos) 
+ Developed by [Victor Macedo](https://github.com/victorcodigos) ... Thank you :D 
