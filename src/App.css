@@ -2,9 +2,8 @@
 
   height: 100%;
   width: 100%;
+  background-image: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.941), rgba(81, 215, 215, 0.294)),
+    url("https://images.pexels.com/photos/3944104/pexels-photo-3944104.jpeg?auto=compress&cs=tinysrgb&w=1290&h=850&dpr=1")
 }
 
-
-/*background-image: no-repeat;
-background-image: linear-gradient(rgba(0, 0, 0, 0.941), rgba(81, 215, 215, 0.294)),
-  url("https://images.pexels.com/photos/3944104/pexels-photo-3944104.jpeg?auto=compress&cs=tinysrgb&w=1290&h=850&dpr=1")*/
