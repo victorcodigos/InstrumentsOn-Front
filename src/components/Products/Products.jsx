@@ -20,7 +20,7 @@ const Products = () => {
             </div>
             {products?.map((product) => {
                 return <Card className="card-products"
-                    style={{ width: 300, border: "1px solid black", margin: "1%" }}
+                    style={{ width: 300, border: "1px solid black", margin: "4.2%" }}
                     key={product.id}
                     title={product.id}>
                     <p>NAME: {product.name}</p>
