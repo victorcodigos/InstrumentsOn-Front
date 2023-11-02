@@ -26,7 +26,7 @@ function NavBar() {
 
     return (
         <>
-            <Navbar className="navMain" style={{ backgroundColor: 'rgba(5, 111, 135, 0.887)' }} data-bs-theme="dark">
+            <Navbar className="navMain" style={{ backgroundColor: 'rgba(5, 111, 135, 0.887)' }} data-bs-theme="blue">
                 <Container className="nav">
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/home"><HomeOutlined /></Nav.Link>
