@@ -10,40 +10,36 @@
 
     .info-store {
 
-        color: white;
+        color: rgb(0, 0, 0);
         font-family: 'Lucida Sans Regular';
         font-size: large;
     }
 
-    .store1{
-        color: white;
+    .store1 {
+        color: rgb(0, 0, 0);
         font-family: 'Lucida Sans Regular';
         font-size: large;
         background-color: rgba(184, 172, 172, 0.63);
         padding: 2%;
         gap: 5%;
         margin-bottom: 20px;
-        box-shadow: 0px 0px 5px rgb(18, 15, 15);
+        box-shadow: 10px 0px 0px rgba(58, 56, 56, 0.997);
         border-radius: 10px;
+        border: 1px solid black;
+        margin: 1%;
+
 
     }
-    .store2{
-        color: white;
-        font-family: 'Lucida Sans Regular';
-        font-size: large;
-        padding: 2%;
-        gap: 5%;
-        border-radius: 10px;
 
-    }
 
     .card-1 {
         background-color: rgba(184, 172, 172, 0.63);
         padding: 2%;
         gap: 5%;
         width: calc(30% - 20px);
-        box-shadow: 0px 0px 5px rgb(252, 252, 252);
-        color: white;
+        box-shadow: 10px 0px 0px rgba(58, 56, 56, 0.997);
+        color: rgb(0, 0, 0);
+
 
     }
 
@@ -54,6 +50,6 @@
     width: 80%;
     height: 80vh;
     left: 9%;
-    box-shadow: 0px 0px 5px rgb(213, 59, 59);
+    box-shadow: 10px 10px 0px rgba(58, 56, 56, 0.997);
 
 }
