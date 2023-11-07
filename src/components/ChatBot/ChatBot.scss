@@ -36,12 +36,12 @@
      padding: 5rem;
      justify-content: space-evenly;
      margin-top: 20px;
-     color: white;
+     color: rgb(0, 0, 0);
      font-family: 'Lucida Sans Regular';
      font-size: large;
 
      .chat {
-         color: white;
+         color: rgb(0, 0, 0);
          font-family: 'Lucida Sans Regular';
          font-size: large;
      }
@@ -57,7 +57,7 @@
          max-width: 100%;
          height: auto;
          border-radius: 10%;
-         box-shadow: 0px 0px 5px rgb(252, 252, 252);
+         box-shadow: 0px 0px 5px rgb(90, 23, 153);
      }
 
  }
