@@ -1,7 +1,5 @@
 import { createContext } from "react";
 import axios from "axios";
-
-
 export const OrdersContext = createContext();
 
 export const OrdersProvider = ({ children }) => {

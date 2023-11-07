@@ -11,7 +11,7 @@
         background-color: rgb(255, 255, 255);
         padding: 2%;
         gap: 5%;
-        box-shadow: 0px 0px 5px rgb(252, 252, 252);
+        box-shadow: 7px 7px 0px #44444489;
         font-family: 'Lucida Sans Regular';
         color: black;
 
@@ -27,37 +27,57 @@
 
     }
 
-    .btn-products{
+    .btn-cardX:hover {
+
+        color: rgb(255, 255, 255);
+        background-color: rgb(9, 95, 116, 0.947);
+    }
+
+    .btn-products {
         background-color: rgba(9, 95, 116, 0.408);
         border-radius: 5%;
         margin-top: 10px;
         box-shadow: 0px 0px 5px rgb(252, 252, 252);
         font-family: 'Lucida Sans Regular';
-        
+
     }
 
+    .btn-products:hover {
+
+        color: black;
+        background-color: rgb(9, 95, 116, 0.947);
+
+    }
+
+
     .star-icon {
-        top: 2% ;
+        top: 2%;
         padding: 1%;
         font-size: 1.2rem;
         cursor: pointer;
         transition: color 0.3s;
-        
+
     }
-    
+
     .star-icon.filled {
-        color: gold; 
-        
+        color: gold;
+
 
     }
 
-    .btn-pay{
+    .btn-pay {
         background-color: rgba(9, 95, 116, 0.408);
         border-radius: 5%;
         padding: 3.5%;
         box-shadow: 0px 0px 5px rgb(252, 252, 252);
-        
-        
+
+
+    }
+
+    .btn-pay:hover {
+        color: black;
+        background-color: rgb(9, 95, 116, 0.947);
+
     }
 
 }
