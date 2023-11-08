@@ -20,7 +20,7 @@
 - Home general overview
 
 <h1>
-  <img src="./src/assets/webVictor.png"> </img>
+  <img src="./src/assets/logo.png"> </img>
   
   </h1> 
 
@@ -152,7 +152,7 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- FUTURE -->
 ## Future Roadmap 📍
 
-- [ ] Add a different style
+- [ ] Deploy to vercel and AWS
 - [ ] Add more products
 - [ ] Add reviews
 
@@ -200,7 +200,7 @@ This project is under license of Victor Macedo
 ## ChatBot
 
 <h1>
-  <img src="./src/assets/chatBot.png"> </img>
+  <img src="./src/assets/chatbot.png"> </img>
   
   </h1>
 
@@ -209,9 +209,9 @@ This project is under license of Victor Macedo
 ## Contact 📩
 
   <p align="center">
- Victor Macedo
+ .
 <a href = "victor.macedo.dedeus@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-    <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+    <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank">.</a> 
 </p>
 
 
