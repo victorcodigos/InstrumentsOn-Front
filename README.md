@@ -199,10 +199,6 @@ This project is under license of Victor Macedo
 <!-- CHATBOT -->
 ## ChatBot
 
-<h1>
-  <img src="./src/assets/chatbot.png"> </img>
-  
-  </h1>
 
 
 <!-- CONTACT -->
