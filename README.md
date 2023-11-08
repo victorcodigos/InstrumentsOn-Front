@@ -201,7 +201,6 @@ This project is under license of Victor Macedo
 
 <h1>
   <img src="./src/assets/chatbot.png"> </img>
-  
   </h1>
 
 
