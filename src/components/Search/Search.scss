@@ -1,7 +1,5 @@
 .App {
-    background-color: linear-gradient(rgb(0, 0, 0), rgba(61, 194, 194, 0.012));
     
-
     .container-input {
 
         text-align: center;
@@ -9,7 +7,7 @@
     }
 
     .table-responsive {
-        background-color: rgba(100, 104, 104, 0.053);
+        background-color: rgb(255, 255, 255);
         display: flex;
         padding: 10rem;
         justify-content: space-evenly;
@@ -21,7 +19,7 @@
 
         text-align: left;
         font-size: large;
-        color: white;
+        color: #444;
         
         
     }
@@ -29,7 +27,7 @@
     .form-control-inputBuscar{
 
         width: 350px;
-        box-shadow: 0px 0px 5px rgb(48, 157, 236);
+        box-shadow: 0px 0px 5px rgb(0, 0, 0);
     }
 
 }

@@ -11,47 +11,61 @@
 
     .divider {
         font-size: large;
-        color: white;
-        
+        color: rgb(0, 0, 0);
+
     }
 
     .list {
-        box-shadow: 0px 0px 5px rgb(252, 252, 252);
+        box-shadow: 10px 10px 0px rgb(58, 56, 56);
         background-color: rgba(9, 95, 116, 0.282);
-        border-color: rgba(9, 95, 116, 0.282);
+        border-color: rgba(4, 4, 4, 0.282);
         background-color: rgba(184, 172, 172, 0.275);
+        
     }
+
     .products {
-        font-size: large;
-        color: white;
+        font-size: 22px;
+        color: rgb(0, 0, 0);
     }
+
     .btn {
         background-color: rgba(169, 199, 206, 0);
-        color: white;
+        color: rgb(0, 0, 0);
     }
 
     .btn-in {
-        box-shadow: 0px 0px 5px rgb(252, 252, 252);
+        box-shadow: 0px 0px 5px rgb(1, 251, 59);
         background-color: rgba(9, 95, 116, 0.408);
-        color: white;
+        color: rgb(0, 0, 0);
+    }
+
+    .btn-in:hover {
+        background-color: rgba(9, 95, 116, 0.848);
+
     }
 
     .btn-in-in {
-        box-shadow: 0px 0px 5px rgb(252, 252, 252);
+        box-shadow: 0px 0px 5px rgba(247, 0, 0, 0.726);
         background-color: rgba(9, 95, 116, 0.408);
-        color: white;
+        color: rgb(0, 0, 0);
         padding-left: 8%;
         margin: 4%;
     }
 
-    .item {
+    .btn-in-in:hover {
+        background-color: rgba(9, 95, 116, 0.848);
 
-        color: white;
     }
 
-    .remove-button{
+    .item {
+
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+    }
+
+    .remove-button {
         background-color: rgba(9, 95, 116, 0.408);
-        color: white;
+        color: rgb(0, 0, 0);
         padding-right: 1.5%;
         margin: 5%;
         left: 230px;
@@ -64,36 +78,36 @@
         }
 
     }
-    .remove-buttonX{
+
+    .remove-buttonX {
         background-color: rgba(9, 95, 116, 0.408);
-        color: white;
+        color: rgb(0, 0, 0);
         padding-right: 1.5%;
         left: 230px;
         position: relative;
         line-height: 25px;
-        
+
 
         @media screen and (max-width: 768px) {
             padding-right: 4%;
             margin: 3%;
             left: 0;
         }
-    
+
     }
 
     .total {
-    
-    
+
         position: fixed;
         top: 20px;
         right: 20px;
         background-color: rgba(0, 100, 125, 0);
         padding: 10px;
         border-radius: 5px;
-        box-shadow: 0px 0px 5px rgb(252, 252, 252);
+        box-shadow: 0px 4px 0px rgb(0, 0, 0);
         z-index: 100;
-        color: white;
-    
+        color: rgb(0, 0, 0);
+
         @media (max-width: 768px) {
             .total {
                 top: 10px;
@@ -104,4 +118,3 @@
         }
     }
 }
-

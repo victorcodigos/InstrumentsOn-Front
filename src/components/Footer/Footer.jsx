@@ -8,10 +8,10 @@ const Footer = () => {
                 <footer>
                     <div className="social">
                         <a href="https://www.instagram.com/macedodedeus/"> <Icon icon="ion:logo-instagram" /></a>
-                        <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/"><Icon icon="ion:logo-snapchat" /></a>
-                        <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/"><Icon icon="ion:logo-twitter" /></a>
-                        <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/"><Icon icon="ion:logo-facebook" /></a>
-                        <a href="https://www.linkedin.com/in/victor-macedo-4a8901210/"><Icon icon="ion:logo-linkedin" /></a>
+                        <a href="https://www.linkedin.com/in/victor-macedo-/"><Icon icon="ion:logo-snapchat" /></a>
+                        <a href="https://www.linkedin.com/in/victor-macedo-/"><Icon icon="ion:logo-twitter" /></a>
+                        <a href="https://www.linkedin.com/in/victor-macedo-/"><Icon icon="ion:logo-facebook" /></a>
+                        <a href="https://www.linkedin.com/in/victor-macedo-/"><Icon icon="ion:logo-linkedin" /></a>
                         <a href="https://github.com/victorcodigos/"><Icon icon="ion:logo-github" /></a></div>
                     <ul className="list-inline">
                         <li className="list-inline-item"><a href="http://localhost:5173/home">Home</a></li>

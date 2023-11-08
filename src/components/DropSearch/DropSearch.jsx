@@ -22,7 +22,7 @@ import {
 export default function DropSearch() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ backgroundImage:
-         'linear-gradient(rgba(0, 100, 125, 200), rgba(0, 0, 10, 0.4)), url("https://gifdb.com/images/high/color-gradient-rainbow-spectrum-3t96bik0yf38hhvp.gif")',
+         'linear-gradient(rgba(10, 10, 10, 700), rgba(0, 0, 10, 0.4)), url("https://gifdb.com/images/high/color-gradient-rainbow-spectrum-3t96bik0yf38hhvp.gif")',
           backgroundSize: 'cover' }}>
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">

@@ -5,14 +5,14 @@ import "./Search.scss";
 
 
 function Search() {
-    const [product, setProduct] = useState([]);
+    const [products, setProducts] = useState([]);
     const [tableProduct, setTableProduct] = useState([]);
     const [search, setSearch] = useState("");
 
     const apiGet = async () => {
         axios.get("http://localhost:3000/products/all")
             .then(res => {
-                setProduct(res.data)
+                setProducts(res.data)
                 setTableProduct(res.data)
             }).catch(err => {
                 console.log(err)
@@ -36,7 +36,7 @@ function Search() {
                 return element;
             }
         })
-        setProduct(resultSearch)
+        setProducts(resultSearch)
     }
 
     useEffect(() => {
@@ -60,13 +60,13 @@ function Search() {
                         </tr>
                     </thead>
                     <tbody>
-                        {product &&
-                            product.map((product) => (
-                                <tr key={product.id}>
-                                    <td> {product.id}</td>
-                                    <td> {product.name}</td>
-                                    <td> {product.type}</td>
-                                    <td> {product.price} €</td>
+                        {products &&
+                            products.map((products) => (
+                                <tr key={products.id}>
+                                    <td> {products.id}</td>
+                                    <td> {products.name}</td>
+                                    <td> {products.type}</td>
+                                    <td> {products.price} €</td>
                                 </tr>
                             ))}
                     </tbody>
